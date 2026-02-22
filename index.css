@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-medical-blue: #2e86de;
+  --color-medical-dark: #222f3e;
+  --color-medical-light: #f1f2f6;
+}
+
+@layer base {
+  body {
+    @apply bg-medical-light text-medical-dark antialiased;
+  }
+}
+
+.glass-morphism {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+}
